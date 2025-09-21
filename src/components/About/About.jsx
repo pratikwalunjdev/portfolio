@@ -19,10 +19,8 @@ const About = () => {
         <div className="text-center md:text-left">
           {/* Greeting */}
           <h1 className="text-4xl font-bold text-white mb-2">
-            Hi all, I'm <span className="text-[#8245ec]">Pratik Walunj</span>
+            Hi, I'm <span className="text-[#8245ec]">Pratik Walunj</span>
           </h1>
-          <br />
-          <br />
           {/* Skills Heading with Typing Effect */}
           <div className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight text-white flex flex-wrap items-center">
             <span>I am a&nbsp;</span>
@@ -67,7 +65,7 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1qaqWUKzgtlBDbNmrEiK3e-CjeTa-F-fF/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

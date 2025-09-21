@@ -1,6 +1,6 @@
 import React from "react";
 // ✅ Correct imports
-import { FaGithub, FaLinkedin, FaInstagram} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -45,7 +45,7 @@ const Footer = () => {
             //{ icon: <FaTwitter />, link: "#" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/pratik-walunj-a4367b21a/" },
             { icon: <FaInstagram />, link: "https://www.instagram.com/pratik_walunj_/" },
-            // { icon: <FaLeetcode />, link: "https://leetcode.com/u/pratik_walunj/" },
+            //{ icon: <FaLeetcode />, link: "https://leetcode.com/u/pratik_walunj/" },
             //{ icon: <FaYoutube />, link: "#" },
             
           ].map((item, index) => (

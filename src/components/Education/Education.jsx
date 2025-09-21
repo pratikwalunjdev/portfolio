@@ -45,7 +45,7 @@ const Education = () => {
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
                 {/* School Logo/Image */}
-                <div className="w-24 h-16 bg-white rounded-md overflow-hidden">
+                <div className="w-16 h-16 bg-white rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={edu.img}
                     alt={edu.school}
@@ -56,7 +56,7 @@ const Education = () => {
                 {/* Degree, School Name, and Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-xl font-semibold text-white">
+                    <h3 className="text-lg sm:text-xl font-semibold text-white">
                       {edu.degree}
                     </h3>
                     <h4 className="text-md sm:text-sm text-gray-300">
