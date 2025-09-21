@@ -146,7 +146,7 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/pratik-walunj-a4367b21a/"
+                href="https://www.linkedin.com/in/pratik-walunj-87a293287/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -154,7 +154,7 @@ const Navbar = () => {
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://www.instagram.com/pratik_walunj_/"
+                href="https://www.instagram.com/pr.tikinsta?igsh=MWU2NGxsbTRwOTV2YQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
