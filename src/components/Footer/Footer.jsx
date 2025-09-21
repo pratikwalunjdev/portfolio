@@ -43,8 +43,8 @@ const Footer = () => {
             { icon: <FaGithub />, link: "https://github.com/pratikwalunjdev" },
             //{ icon: <FaFacebook />, link: "#" },
             //{ icon: <FaTwitter />, link: "#" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/pratik-walunj-a4367b21a/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/pratik_walunj_/" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/pratik-walunj-87a293287/" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/pr.tikinsta?igsh=MWU2NGxsbTRwOTV2YQ==" },
             //{ icon: <FaLeetcode />, link: "https://leetcode.com/u/pratik_walunj/" },
             //{ icon: <FaYoutube />, link: "#" },
             
