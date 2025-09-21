@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
+import reactjsLogo from "../../assets/tech_logo/reactjs.png";
+import nodejsLogo from "../../assets/tech_logo/nodejs.png";
+import javascriptLogo from "../../assets/tech_logo/javascript.png";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const projectCategories = [
+    { name: "All", value: "all", logo: null },
+    { name: "React JS", value: "React JS", logo: reactjsLogo },
+    { name: "Node.js", value: "Node.js", logo: nodejsLogo },
+    { name: "JavaScript", value: "JavaScript", logo: javascriptLogo },
+  ];
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);
@@ -11,6 +22,11 @@ const Work = () => {
   const handleCloseModal = () => {
     setSelectedProject(null);
   };
+
+  const filteredProjects =
+    activeCategory === "all"
+      ? projects
+      : projects.filter((project) => project.tags.includes(activeCategory));
 
   return (
     <section
@@ -27,9 +43,29 @@ const Work = () => {
         </p>
       </div>
 
+      {/* Category Filter Buttons */}
+      <div className="flex justify-center flex-wrap gap-4 mb-12">
+        {projectCategories.map((category) => (
+          <button
+            key={category.name}
+            onClick={() => setActiveCategory(category.value)}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-lg font-semibold transition-colors duration-300 ${
+              activeCategory === category.value
+                ? "bg-purple-600 text-white shadow-lg shadow-purple-500/50"
+                : "bg-gray-800 text-gray-400 hover:bg-purple-500 hover:text-white"
+            }`}
+          >
+            {category.logo && (
+              <img src={category.logo} alt={category.name} className="w-6 h-6" />
+            )}
+            <span>{category.name}</span>
+          </button>
+        ))}
+      </div>
+
       {/* Projects Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
